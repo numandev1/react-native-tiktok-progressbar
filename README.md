@@ -11,12 +11,16 @@ npm install react-native-tiktok-progressbar
 ## Usage
 
 ```js
-import TiktokProgressbar from "react-native-tiktok-progressbar";
+import TiktokProgressbar from 'react-native-tiktok-progressbar';
 
 // ...
 
-const result = await TiktokProgressbar.multiply(3, 7);
+<TiktokProgressbar paddingHorizontal={15} isLoading={true} duration={1000} />;
 ```
+
+## Demo
+
+![img](./media/tiktok-progressbar.gif)
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 {
   "name": "react-native-tiktok-progressbar",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "description": "react native progressbar like tiktok",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -34,7 +34,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "tiktok",
+    "progressbar"
   ],
   "repository": "https://github.com/nomi9995/react-native-tiktok-progressbar",
   "author": "Muhammad Numan <muhammadnuman70@gmail.com> (https://github.com/nomi9995)",
@@ -65,7 +67,9 @@
     "react-native": "0.63.4",
     "react-native-builder-bob": "^0.18.0",
     "release-it": "^14.2.2",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-gesture-handler": "^1.6.1"
   },
   "peerDependencies": {
     "react": "*",
