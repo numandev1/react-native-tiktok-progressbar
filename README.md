@@ -15,7 +15,13 @@ import TiktokProgressbar from 'react-native-tiktok-progressbar';
 
 // ...
 
-<TiktokProgressbar paddingHorizontal={15} isLoading={true} duration={1000} />;
+<TiktokProgressbar
+  paddingHorizontal={15}
+  duration={1000}
+  height={1}
+  color="blue"
+  isLoading={true}
+/>;
 ```
 
 ## Demo
