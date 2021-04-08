@@ -6,7 +6,12 @@ import TiktokProgressbar from 'react-native-tiktok-progressbar';
 export default function App() {
   return (
     <View style={styles.container}>
-      <TiktokProgressbar paddingHorizontal={15} isLoading={true} />
+      <TiktokProgressbar
+        paddingHorizontal={15}
+        height={1}
+        color="blue"
+        isLoading={true}
+      />
     </View>
   );
 }

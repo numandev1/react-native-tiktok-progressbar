@@ -29,7 +29,7 @@ function runTiming(
   };
 
   const config = {
-    duration: duration,
+    duration,
     toValue: new Value(0),
     easing: Easing.inOut(Easing.ease),
   };
@@ -61,12 +61,16 @@ type Props = {
   paddingHorizontal?: number;
   duration?: number;
   isLoading?: boolean;
+  color?: string;
+  height?: number;
 };
 
 const Index = ({
   paddingHorizontal = 0,
   duration = 1000,
   isLoading = false,
+  color = 'black',
+  height = 1,
 }: Props) => {
   const clock = new Clock();
   const screen = useWindowDimensions();
@@ -76,8 +80,12 @@ const Index = ({
 
   return (
     <View style={styles.container}>
-      <Animated.View style={[styles.line, { width: transX }]} />
-      <Animated.View style={[styles.line, { width: transX }]} />
+      <Animated.View
+        style={[{ height, backgroundColor: color }, { width: transX }]}
+      />
+      <Animated.View
+        style={[{ height, backgroundColor: color }, { width: transX }]}
+      />
     </View>
   );
 };
@@ -86,10 +94,6 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-  },
-  line: {
-    height: 1,
-    backgroundColor: 'black',
   },
 });
 
