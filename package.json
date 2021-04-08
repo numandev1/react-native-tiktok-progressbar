@@ -1,6 +1,6 @@
 {
   "name": "react-native-tiktok-progressbar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "react native progressbar like tiktok",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
